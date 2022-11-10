@@ -1,0 +1,55 @@
+@import "./colors.scss";
+$small: 20px;
+$medium: 900px;
+.login-page {
+  min-height: 100vh;
+  height: auto;
+  background-color: $orange-color;
+  color: $black-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  img {
+    margin: 1rem auto 2rem auto;
+  }
+
+  .login-container {
+    background-color: $white-color;
+    width: 45%;
+    min-width: 315px;
+    padding: Max(30px, 2vh) Max(20px, 4vw);
+    border-radius: 20px;
+
+    h1 {
+      font-weight: 600;
+    }
+    p {
+      margin: 20px 0 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+  .login-page {
+    padding: auto;
+    .register-container {
+      width: 95%;
+      .input-group {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 435px) {
+  .login-page {
+    height: 100%;
+  }
+}
+@media (max-height: 600px) {
+  .login-page {
+    height: 100%;
+  }
+}

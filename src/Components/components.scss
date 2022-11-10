@@ -1,0 +1,24 @@
+@import "./colors.scss";
+
+.login-page {
+  background-color: $orange-color;
+  color: $black-color;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.login-container {
+  .login-form {
+    width: 50%;
+    margin: 6rem 0 1rem 0;
+  }
+  .login-form > * {
+    margin: 10px 0;
+  }
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    margin: 20px 0 0 0;
+  }
+}
